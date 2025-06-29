@@ -1,0 +1,11 @@
+.gameScoreboard {
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+    padding: 10px 30px;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: #2a2a88;
+    box-shadow: 0 0 0 6px rgb(210, 157, 24);
+    margin: 20px 0px;
+}

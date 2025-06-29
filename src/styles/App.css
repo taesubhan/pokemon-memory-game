@@ -1,0 +1,40 @@
+:root {
+    font-family: monospace, sans-serif, Arial, 'Times New Roman';
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Pokemon';
+    src: url('../assets/fonts/Pokemon Solid.ttf') format('truetype');
+}
+
+.pokemonFont {
+    font-family: 'Pokemon';
+    color: #ffcb05;
+    text-shadow: 2px 2px 0 #3b4cca;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    background-image: url('../assets/images/grass_ocean_background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
