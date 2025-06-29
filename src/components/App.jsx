@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
 
-import { DisplayGame } from './components/gameBoard';
-import { Game } from "./logic/Game.js";
+import { DisplayGame } from './gameDisplay.jsx';
+import { Game } from "../logic/Game.js";
 
-import './styles/App.css';
-import './styles/header.css';
-import './styles/gameBoard.css';
-import './styles/scoreBoard.css';
+import '../styles/App.css';
+import '../styles/header.css';
+import '../styles/gameBoard.css';
+import '../styles/scoreBoard.css';
+import '../styles/animation.css';
 
 // Custom hook to initialize the game object 
 function useGame(genID = 1) {

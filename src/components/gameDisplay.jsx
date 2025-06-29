@@ -5,8 +5,6 @@ export function DisplayGame({game}) {
 
     const [gameState, setGameState] = useState(game.getState());
 
-    console.log(gameState);
-
     return (
         <div className="gameContainer">
             <GameScoreboard gameState={gameState} />
@@ -26,8 +24,6 @@ export function GameScoreboard({gameState}) {
 }
 
 function handleClick(game, setGameState, id) {
-
-    console.log(id);
     game.selectPokemon(id);
     setGameState(game.getState());
 }
@@ -42,7 +38,7 @@ export function GameBoard({gameState, setGameState}) {
     
     const pokemonImgs = pokemonList.map((obj) => {
         return (
-        <div className="pokemonImageContainer" pokeid={obj.id} key={obj.id} onClick={() => handleClick(game, setGameState, obj.id)}>
+        <div className="pokemonImageContainer shakeAnimation" pokeid={obj.id} key={obj.id} onClick={() => handleClick(game, setGameState, obj.id)}>
             <img id={obj.id} className="pokemonImage" src={obj.imgUrl} alt="" /> 
         </div>
         )
